@@ -102,3 +102,16 @@ index 6f37c78..34fca7a 100644
 $ rails generate scaffold Micropost content:text user_id:integer
 $ rails db:migrate
 ```
+
+### Restrict content length of Micropost 
+
+```diff
+diff --git a/app/models/micropost.rb b/app/models/micropost.rb
+index 4f72910..e861145 100644
+--- a/app/models/micropost.rb
++++ b/app/models/micropost.rb
+@@ -1,2 +1,3 @@
+ class Micropost < ApplicationRecord
++  validates :content, length: {maximum: 140}
+ end
+```
