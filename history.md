@@ -137,3 +137,12 @@ index 379658a..6c05c07 100644
 +  has_many :microposts
  end
 ```
+
+### Deploy on heroku
+
+```sh
+$ git push heroku master
+$ heroku run rails db:migrate
+```
+
+The application is running on [heroku](https://damp-retreat-94043.herokuapp.com)
