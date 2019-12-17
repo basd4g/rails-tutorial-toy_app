@@ -115,3 +115,25 @@ index 4f72910..e861145 100644
 +  validates :content, length: {maximum: 140}
  end
 ```
+
+### Associate Micropost with User
+
+```diff
+diff --git a/app/models/micropost.rb b/app/models/micropost.rb
+index e861145..20680c7 100644
+--- a/app/models/micropost.rb
++++ b/app/models/micropost.rb
+@@ -1,3 +1,4 @@
+ class Micropost < ApplicationRecord
++  belongs_to :user
+   validates :content, length: {maximum: 140}
+ end
+diff --git a/app/models/user.rb b/app/models/user.rb
+index 379658a..6c05c07 100644
+--- a/app/models/user.rb
++++ b/app/models/user.rb
+@@ -1,2 +1,3 @@
+ class User < ApplicationRecord
++  has_many :microposts
+ end
+```
