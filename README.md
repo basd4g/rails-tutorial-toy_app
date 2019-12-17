@@ -1,7 +1,12 @@
-# README
+# toy_app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+I'm learning Ruby on rails with using [rails tutorial](https://railstutorial.jp/chapters/beginning).
+
+This is [toy_app](https://railstutorial.jp/chapters/toy_app)
+
+## heroku
+
+The application is running on [heroku](https://damp-retreat-94043.herokuapp.com)
 
 ## History
 
