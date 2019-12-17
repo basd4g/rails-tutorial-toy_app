@@ -10,6 +10,8 @@ $ cd toy_app/
 $ vim Gemfile
 ```
 
+Gemfile
+
 ```Gemfile
 source 'https://rubygems.org'
 
@@ -55,6 +57,7 @@ $ vim app/controllers/application_controller.rb
 $ vim config/routes.rb 
 $ rails s
 ```
+app/controllers/application_controller.rb
 
 ```app/controllers/application_controller.rb
 class ApplicationController < ActionController::Base
@@ -65,6 +68,7 @@ class ApplicationController < ActionController::Base
   end
 end
 ```
+config/routes.rb
 
 ```config/routes.rb
 Rails.application.routes.draw do
