@@ -3,6 +3,12 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+## History
+
+The repository's history is [here](history.md)
+
+## Others
+
 Things you may want to cover:
 
 * Ruby version
