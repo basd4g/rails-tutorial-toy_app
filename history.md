@@ -80,3 +80,18 @@ $ rails generate scaffold User name:string email:string
 $ rails db:migrate
 $ rails s
 ```
+
+### Fix routing
+
+```diff
+diff --git a/config/routes.rb b/config/routes.rb
+index 6f37c78..34fca7a 100644
+--- a/config/routes.rb
++++ b/config/routes.rb
+@@ -1,4 +1,4 @@
+ Rails.application.routes.draw do
+   resources :users
+-  root 'application#hello'
++  root 'users#index'
+ end
+```
