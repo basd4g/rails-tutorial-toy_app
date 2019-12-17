@@ -73,7 +73,7 @@ Rails.application.routes.draw do
 end
 ```
 
-### Create database
+### Create User
 
 ```sh
 $ rails generate scaffold User name:string email:string
@@ -94,4 +94,11 @@ index 6f37c78..34fca7a 100644
 -  root 'application#hello'
 +  root 'users#index'
  end
+```
+
+### Create Micropost
+
+```sh
+$ rails generate scaffold Micropost content:text user_id:integer
+$ rails db:migrate
 ```
